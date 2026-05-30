@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>docs/pg_transparent.png</file>
+        <file>docs/pg_logo.jpg</file>
+    </qresource>
+</RCC>
