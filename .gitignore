@@ -1,0 +1,12 @@
+# Qt Creator / CMake śmieci
+build/
+*.user
+.qtcreator/
+
+# Pliki binarne
+*.exe
+*.obj
+*.pdb
+
+# Dane wygenerowane (opcjonalnie, jeśli nie chcesz ich w Gicie)
+data/**/*.csv
