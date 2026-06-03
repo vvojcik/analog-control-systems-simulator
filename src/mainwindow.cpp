@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+#include <QIcon>
 #include <QScreen>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
@@ -17,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setWindowIcon(QIcon(":/docs/app_icon.png"));
 
     Qt::WindowFlags flags = windowFlags();
     setWindowFlags(flags & ~Qt::WindowMinimizeButtonHint & ~Qt::WindowMaximizeButtonHint);

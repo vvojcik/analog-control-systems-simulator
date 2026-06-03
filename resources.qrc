@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>docs/pg_transparent.png</file>
         <file>docs/pg_logo.jpg</file>
+        <file>docs/app_icon.png</file>
     </qresource>
 </RCC>
