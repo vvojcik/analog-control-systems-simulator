@@ -14,7 +14,9 @@ include_directories(include)
 qt_add_executable(LabSimulator
     src/main.cpp
     src/mainwindow.cpp
+    src/exercise3.cpp
     include/mainwindow.h
+    include/exercise3.h
     ui/mainwindow.ui
     resources.qrc
 )

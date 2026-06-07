@@ -13,6 +13,8 @@
 #include <QFont>
 #include <QButtonGroup>
 
+#include "exercise3.h"
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -125,9 +127,7 @@ MainWindow::MainWindow(QWidget *parent)
     pageHome->setAlignment(Qt::AlignTop | Qt::AlignLeft);
     pageHome->setMargin(40);
 
-    QLabel *page3 = new QLabel("Obszar roboczy: Ćwiczenie 3");
-    page3->setAlignment(Qt::AlignCenter);
-    page3->setStyleSheet("font-size: 18px; color: #555;");
+    Exercise3 *page3 = new Exercise3(this);
 
     QLabel *page4 = new QLabel("Obszar roboczy: Ćwiczenie 4 (Silnik DC)");
     page4->setAlignment(Qt::AlignCenter);
@@ -138,7 +138,7 @@ MainWindow::MainWindow(QWidget *parent)
     page5->setStyleSheet("font-size: 18px; color: #555;");
 
     stackedWidget->addWidget(pageHome);
-    stackedWidget->addWidget(page3);
+    stackedWidget->addWidget(page3); // indeks 1
     stackedWidget->addWidget(page4);
     stackedWidget->addWidget(page5);
 
