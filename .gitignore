@@ -1,12 +1,28 @@
 # Qt Creator / CMake śmieci
+.vscode/
 build/
+app/build/
 *.user
+*.opendb
+*.VC.db
 .qtcreator/
 
-# Pliki binarne
 *.exe
 *.obj
 *.pdb
 
-# Dane wygenerowane (opcjonalnie, jeśli nie chcesz ich w Gicie)
-data/**/*.csv
+thesis/*.aux
+thesis/*.bbl
+thesis/*.blg
+thesis/*.log
+thesis/*.out
+thesis/*.toc
+thesis/*.synctex.gz
+thesis/*.fdb_latexmk
+thesis/*.fls
+thesis/*.nav
+thesis/*.snm
+thesis/*.vrb
+
+Thumbs.db
+Desktop.ini
