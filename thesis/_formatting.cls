@@ -15,7 +15,8 @@
 \RequirePackage{polyglossia}
 \setdefaultlanguage[vlna=true]{polish}
 \setotherlanguage{english}
-\RequirePackage[newfloat]{minted}
+%\RequirePackage[newfloat]{minted}
+\RequirePackage{listings}
 \RequirePackage{csquotes}
 \defaultfontfeatures{Ligatures=TeX, Scale=MatchLowercase}
 
@@ -159,13 +160,15 @@
 
 %% -------------------- Kod źródłowy (listings) ---------------
 \RequirePackage{xcolor}
-\setmonofont{DejaVu Sans Mono}[Scale=MatchLowercase]
-\setminted{
-    frame=single,
-    fontsize=\small,
+\setmonofont{Consolas}[Scale=MatchLowercase]
+\lstset{
+    basicstyle=\ttfamily\small,
     breaklines=true,
+    frame=single,
     numbers=left,
-    numbersep=5pt
+    numberstyle=\tiny,
+    tabsize=4,
+    showstringspaces=false
 }
 
 %% -------------------- Makra ------------------------------

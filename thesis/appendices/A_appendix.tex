@@ -8,15 +8,14 @@ W dodatkach zamieszcza się materiały uzupełniające, które nie są niezbędn
 W niniejszym dodatku przedstawiono przykładowy kod źródłowy generujący wykres funkcji \emph{sinus}. Kod może być wykonany w środowisku Python (np. z wykorzystaniem bibliotek \texttt{NumPy} \cite{NumPyGuide2025} oraz \texttt{Matplotlib}). Przykład ilustruje sposób tworzenia prostych wykresów funkcji okresowych, które mogą być użyte do wizualizacji wyników w pracy inżynierskiej.
 
 \begin{center}
-  \captionsetup{type=listing}
-  \inputminted[
-    linenos,
+  \lstinputlisting[
+    language=Python,
+    caption={Generowanie wykresu funkcji sinus w Pythonie.},
+    label={lst:sinus_py},
     frame=single,
-    breaklines,
-    breakanywhere
-  ]{python}{other/sin.py}
-  \caption{Generowanie wykresu funkcji sinus w Pythonie.}
-  \label{lst:sinus_py}
+    numbers=left,
+    breaklines=true
+  ]{other/sin.py}
 \end{center}
 
 \subsection{Uwagi dotyczące formatowania kodu}
